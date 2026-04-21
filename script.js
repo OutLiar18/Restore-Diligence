@@ -1,3 +1,3 @@
 function orderNow() {
-    window.open("https://wa.me/27700000000", "_blank");
+    window.open("https://wa.me/27XXXXXXXXX", "_blank");
 }

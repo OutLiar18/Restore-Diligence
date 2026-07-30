@@ -25,7 +25,7 @@ export const siteConfig = {
 
   contacts: {
     primary: {
-      name: "Auntie Rani",
+      name: "Rani",
       role: "Owner & Cook",
       phoneDisplay: "082 000 0000",
       phoneNumber: "+27820000000",

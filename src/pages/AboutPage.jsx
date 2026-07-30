@@ -21,7 +21,7 @@ function AboutPage() {
           <h1>Care is the ingredient behind everything.</h1>
           <p>
             This page uses a polished placeholder story. Replace it with your
-            aunt’s real background, food journey and reasons for starting the
+            real background, food journey and reasons for starting the
             business.
           </p>
         </div>

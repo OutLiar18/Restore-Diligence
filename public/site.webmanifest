@@ -1,0 +1,23 @@
+{
+  "name": "Restore Diligence",
+  "short_name": "Restore Diligence",
+  "description": "Homemade samoosas and savouries prepared with faith, care and diligence.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8e7",
+  "theme_color": "#431407",
+  "icons": [
+    {
+      "src": "/brand/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

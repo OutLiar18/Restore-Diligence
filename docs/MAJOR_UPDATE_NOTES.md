@@ -3,8 +3,10 @@
 ## Store identity
 
 - Primary brand colours changed to deep red, burgundy, gold and warm cream.
-- Added a new RD shield mark with an integrated Christian cross.
-- Added a reusable full logo SVG in `public/restore-diligence-logo.svg`.
+- Added a refined R–Latin-cross–D monogram in red, burgundy and gold.
+- Added the approved horizontal logo lockup with the stacked script wordmark.
+- Added responsive WebP and PNG logo assets in `public/brand/`.
+- Added browser-tab favicon, 16 px and 32 px icons, Apple touch icon and web manifest.
 - Added subtle faith-led language around gratitude, honesty, diligence and service.
 
 ## Ordering system

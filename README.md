@@ -16,6 +16,19 @@ rebuilding the design, content and calls to action around food ordering.
 - Privacy Policy
 - Custom 404 page
 
+
+## Brand assets
+
+The website now uses the approved Restore Diligence identity throughout:
+
+- `public/brand/restore-diligence-logo.webp` — full horizontal logo.
+- `public/brand/restore-diligence-logo.png` — PNG fallback and structured-data logo.
+- `public/brand/restore-diligence-mark.webp` — R–Latin-cross–D monogram.
+- `public/favicon.ico` — browser-tab icon.
+- `public/apple-touch-icon.png` — mobile home-screen icon.
+
+The header and footer load responsive WebP versions automatically, with PNG fallbacks.
+
 ## Important: dummy content
 
 The phone number, email address, service area, prices, products, opening hours,

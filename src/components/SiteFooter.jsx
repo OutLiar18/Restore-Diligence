@@ -18,9 +18,8 @@ function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer__main">
         <div className="site-footer__brand">
-          <BrandMark light />
+          <BrandMark variant="full" light />
           <div>
-            <strong>{companyName}</strong>
             <p>{isGivingDrive ? christmasDrive.title : descriptor}</p>
             <span>
               {isGivingDrive ? "Practical giving. Dignity protected." : siteConfig.tagline}

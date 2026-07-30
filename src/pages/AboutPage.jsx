@@ -20,7 +20,7 @@ function AboutPage() {
           <p className="eyebrow">A family-food brand with an unusual name</p>
           <h1>Care is the ingredient behind everything.</h1>
           <p>
-            This page uses a polished placeholder story. Replace it with your
+            This page uses a polished placeholder story. Replace it with your 
             real background, food journey and reasons for starting the
             business.
           </p>

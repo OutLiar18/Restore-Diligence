@@ -1,58 +1,51 @@
 .brand-mark {
-  width: 56px;
-  height: 56px;
-  flex: 0 0 56px;
-  border: 1px solid rgba(213, 166, 44, 0.64);
-  border-radius: 18px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(145deg, var(--colour-red), var(--colour-deep));
-  box-shadow: 0 12px 28px rgba(76, 4, 16, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
 }
 
-.brand-mark svg {
-  width: 45px;
-  height: 45px;
-  overflow: visible;
+.brand-mark picture,
+.brand-mark img {
+  display: block;
 }
 
-.brand-mark__shield {
-  fill: var(--colour-gold);
+.brand-mark img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-.brand-mark__cross {
-  fill: var(--colour-cream);
-  stroke: var(--colour-deep);
-  stroke-width: 1.2;
-  paint-order: stroke;
+.brand-mark--full {
+  width: clamp(156px, 17vw, 208px);
+  max-width: 100%;
 }
 
-.brand-mark__letters {
-  fill: var(--colour-deep);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 21px;
-  font-weight: 900;
-  letter-spacing: -1px;
+.brand-mark--full.brand-mark--compact {
+  width: clamp(148px, 16vw, 190px);
 }
 
-.brand-mark--compact {
+.brand-mark--icon {
+  width: 58px;
+  height: 58px;
+}
+
+.brand-mark--icon.brand-mark--compact {
   width: 48px;
   height: 48px;
-  flex-basis: 48px;
-  border-radius: 15px;
-}
-
-.brand-mark--compact svg {
-  width: 38px;
-  height: 38px;
 }
 
 .brand-mark--light {
-  border-color: rgba(255, 255, 255, 0.34);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: none;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.2));
 }
 
-.site--drive .brand-mark {
-  background: linear-gradient(145deg, var(--colour-drive), var(--colour-drive-deep));
+.site--drive .brand-mark--full,
+.site--drive .brand-mark--icon {
+  filter: saturate(0.94) drop-shadow(0 8px 20px rgba(12, 48, 31, 0.12));
+}
+
+@media (max-width: 410px) {
+  .brand-mark--full.brand-mark--compact {
+    width: 142px;
+  }
 }

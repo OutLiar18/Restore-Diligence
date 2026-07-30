@@ -1,18 +1,50 @@
 import "./BrandMark.css";
 
-function BrandMark({ compact = false, light = false }) {
+function BrandMark({ variant = "mark", compact = false, light = false }) {
+  const isFullLogo = variant === "full";
+  const className = [
+    "brand-mark",
+    isFullLogo ? "brand-mark--full" : "brand-mark--icon",
+    compact ? "brand-mark--compact" : "",
+    light ? "brand-mark--light" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <span
-      className={`brand-mark ${compact ? "brand-mark--compact" : ""} ${
-        light ? "brand-mark--light" : ""
-      }`}
-      aria-hidden="true"
-    >
-      <svg viewBox="0 0 64 64" role="img">
-        <path className="brand-mark__shield" d="M8 8h48v29c0 12-9 19-24 24C17 56 8 49 8 37V8Z" />
-        <path className="brand-mark__cross" d="M42 13h7v9h8v7h-8v10h-7V29h-8v-7h8v-9Z" />
-        <text x="15" y="43" className="brand-mark__letters">RD</text>
-      </svg>
+    <span className={className} aria-hidden="true">
+      {isFullLogo ? (
+        <picture>
+          <source
+            srcSet="/brand/restore-diligence-logo-600.webp 600w, /brand/restore-diligence-logo.webp 1200w"
+            type="image/webp"
+          />
+          <img
+            src="/brand/restore-diligence-logo.png"
+            alt=""
+            width="1200"
+            height="455"
+            sizes="(max-width: 767px) 160px, 208px"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
+      ) : (
+        <picture>
+          <source
+            srcSet="/brand/restore-diligence-mark-256.webp 256w, /brand/restore-diligence-mark.webp 512w"
+            type="image/webp"
+          />
+          <img
+            src="/brand/restore-diligence-mark.png"
+            alt=""
+            width="512"
+            height="512"
+            sizes="58px"
+            decoding="async"
+          />
+        </picture>
+      )}
     </span>
   );
 }

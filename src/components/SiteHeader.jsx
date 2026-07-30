@@ -92,11 +92,7 @@ function SiteHeader() {
           aria-label={`${siteConfig.companyName} home`}
           onClick={() => closeMenu()}
         >
-          <BrandMark compact />
-          <span>
-            <strong>{siteConfig.companyName}</strong>
-            <small>{isGivingDrive ? siteConfig.christmasDrive.title : siteConfig.faithLine}</small>
-          </span>
+          <BrandMark variant="full" compact />
         </NavLink>
 
         <button

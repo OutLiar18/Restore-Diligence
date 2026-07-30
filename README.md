@@ -8,7 +8,8 @@ rebuilding the design, content and calls to action around food ordering.
 
 - Home
 - Menu with category filters
-- WhatsApp order builder
+- Persistent shopping cart with quantity controls
+- EFT checkout and WhatsApp order confirmation
 - About
 - Christmas Giving Drive
 - Contact
@@ -18,7 +19,7 @@ rebuilding the design, content and calls to action around food ordering.
 ## Important: dummy content
 
 The phone number, email address, service area, prices, products, opening hours,
-Christmas-drive dates and beneficiary details are placeholders. Replace them before
+bank details, Christmas-drive dates and beneficiary details are placeholders. Replace them before
 publishing the site as a real business website.
 
 The fastest place to update business details is:
@@ -77,8 +78,9 @@ refreshing the browser.
 3. Original food photography.
 4. Real owner story and portrait.
 5. Confirmed ordering lead time and collection/delivery area.
-6. Verified Christmas-drive beneficiary, dates, accepted items and drop-off point.
-7. Correct Netlify URL in `siteConfig`, `robots.txt` and `sitemap.xml`.
+6. Real EFT bank name, account holder, account number, account type and branch code.
+7. Verified Christmas-drive beneficiary, dates, accepted goods and drop-off point.
+8. Correct Netlify URL in `siteConfig`, `robots.txt` and `sitemap.xml`.
 
 ## Image placeholders
 
@@ -92,3 +94,13 @@ Suggested original photographs:
 - Owner: vertical 4:5 natural kitchen portrait.
 - Giving drive: landscape 3:2 image of organised donation boxes or volunteers,
   with recipient dignity protected.
+
+## Ordering and payment flow
+
+Customers add products to a browser-based cart, adjust quantities and enter their
+order details. The checkout then displays EFT information and creates a WhatsApp
+summary with a unique payment reference. The website does not process cards or
+collect banking credentials.
+
+The Christmas Giving Drive is deliberately separate from food-order payments and
+accepts approved goods only—never cash, EFT or other monetary donations.

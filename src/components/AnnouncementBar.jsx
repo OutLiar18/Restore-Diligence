@@ -6,16 +6,12 @@ function AnnouncementBar() {
   return (
     <div className="announcement-bar">
       <div className="announcement-bar__inner">
-        <span className="announcement-bar__spark" aria-hidden="true">
-          ✦
-        </span>
+        <span className="announcement-bar__spark" aria-hidden="true">✦</span>
         <p>
           <strong>{siteConfig.christmasDrive.year} Christmas Giving Drive</strong>
-          <span> — clothes, food hampers and care items welcomed.</span>
+          <span> — approved goods only; no money donations.</span>
         </p>
-        <Link to="/christmas-drive">
-          Learn more <span aria-hidden="true">→</span>
-        </Link>
+        <Link to="/christmas-drive">Learn more <span aria-hidden="true">→</span></Link>
       </div>
     </div>
   );

@@ -29,8 +29,8 @@ function MenuPage() {
           <p className="eyebrow">Sample menu</p>
           <h1>Pick a favourite. Mix it your way.</h1>
           <p>
-            These items and prices are dummy content for the design stage. Replace
-            them with the confirmed menu before the website launches publicly.
+            Add as many items as you like, adjust quantities in your cart and
+            finalise the order with EFT payment after availability is confirmed.
           </p>
         </div>
       </header>
@@ -66,7 +66,7 @@ function MenuPage() {
                 fresh, frozen or ready to eat.
               </p>
             </div>
-            <OrderButton label="Build a sample order" />
+            <OrderButton label="Review cart & checkout" />
           </aside>
         </div>
       </section>

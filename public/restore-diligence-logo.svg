@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" role="img" aria-labelledby="title desc">
+  <title id="title">Restore Diligence logo</title>
+  <desc id="desc">A red and gold RD shield with a Christian cross and the Restore Diligence name.</desc>
+  <rect width="560" height="160" rx="28" fill="#fff7e4"/>
+  <g transform="translate(20 16)">
+    <rect width="128" height="128" rx="30" fill="#3c0710"/>
+    <path d="M16 16h96v58c0 24-18 38-48 48-30-10-48-24-48-48V16Z" fill="#d8a92f"/>
+    <path d="M84 26h14v18h16v14H98v20H84V58H68V44h16V26Z" fill="#fff7e4" stroke="#3c0710" stroke-width="2.2"/>
+    <text x="30" y="88" fill="#3c0710" font-family="Georgia, serif" font-size="43" font-weight="900" letter-spacing="-2">RD</text>
+  </g>
+  <text x="172" y="70" fill="#3c0710" font-family="Georgia, serif" font-size="42" font-weight="700">Restore Diligence</text>
+  <text x="174" y="104" fill="#850f1d" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="1.2">HOMEMADE SAMOOSAS &amp; SAVOURIES</text>
+  <text x="174" y="132" fill="#725b60" font-family="Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="1">FAITH • FAMILY • SERVICE</text>
+</svg>

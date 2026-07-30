@@ -14,7 +14,7 @@
 }
 
 .faq-section details {
-  border: 1px solid rgba(67, 20, 7, 0.1);
+  border: 1px solid rgba(60, 7, 16, 0.1);
   border-radius: 15px;
   overflow: hidden;
   background: var(--colour-white);

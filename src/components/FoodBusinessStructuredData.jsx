@@ -7,6 +7,8 @@ function FoodBusinessStructuredData() {
     "@id": `${siteConfig.siteUrl}/#business`,
     name: siteConfig.companyName,
     url: siteConfig.siteUrl,
+    logo: `${siteConfig.siteUrl}/restore-diligence-logo.svg`,
+    paymentAccepted: "EFT / bank transfer",
     description: siteConfig.seo.defaultDescription,
     telephone: siteConfig.contacts.primary.phoneNumber,
     email: siteConfig.contacts.primary.email,

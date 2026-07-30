@@ -1,57 +1,49 @@
 import FAQSection from "../components/FAQSection";
 import OrderForm from "../components/OrderForm";
 import PageMeta from "../components/PageMeta";
-import { orderFaqs } from "../data/faqs";
 import { siteConfig } from "../config/site";
+import { orderFaqs } from "../data/faqs";
 import "./Pages.css";
 
 function OrderPage() {
   return (
     <>
       <PageMeta
-        title="Order Samoosas on WhatsApp | Restore Diligence"
-        description="Prepare a clear samoosa order request and send it to Restore Diligence through WhatsApp."
+        title="Cart & EFT Checkout | Restore Diligence"
+        description="Add samoosas to your cart, review your order and receive Restore Diligence EFT payment instructions."
         canonicalPath="/order"
       />
 
       <header className="page-intro page-intro--order">
         <div className="container page-intro__inner">
-          <p className="eyebrow">No account. No complicated checkout.</p>
-          <h1>Build the request. Confirm it personally.</h1>
+          <p className="eyebrow">Cart • Details • EFT payment</p>
+          <h1>A familiar checkout, with personal confirmation.</h1>
           <p>
-            Complete the form once and it turns your choices into a WhatsApp
-            message for {siteConfig.contacts.primary.name}.
+            Build your cart like a food-delivery app, then confirm the order on
+            WhatsApp and pay securely by direct bank transfer.
           </p>
         </div>
       </header>
 
-      <section className="form-page">
-        <div className="container form-page__layout">
+      <section className="form-page checkout-page">
+        <div className="container form-page__layout form-page__layout--single">
           <OrderForm />
+        </div>
+      </section>
 
-          <aside className="order-sidebar">
-            <p className="eyebrow">Before you send</p>
-            <h2>Helpful order details</h2>
-            <ul>
-              <li>{siteConfig.business.orderLeadTime}</li>
-              <li>Large platters may require additional preparation time.</li>
-              <li>Final pricing is confirmed before the order is accepted.</li>
-              <li>{siteConfig.business.collectionNote}.</li>
-            </ul>
-
-            <div className="order-sidebar__contact">
-              <span>Prefer to speak directly?</span>
-              <a href={`tel:${siteConfig.contacts.primary.phoneNumber}`}>
-                {siteConfig.contacts.primary.phoneDisplay}
-              </a>
-            </div>
-          </aside>
+      <section className="payment-promise">
+        <div className="container payment-promise__layout">
+          <div>
+            <p className="eyebrow eyebrow--light">Clear expectations</p>
+            <h2>Payment confirms your place in the preparation schedule.</h2>
+          </div>
+          <p>{siteConfig.business.orderLeadTime}. Larger and custom orders may require additional time, which will be confirmed before payment.</p>
         </div>
       </section>
 
       <FAQSection
         title="Questions people usually ask before ordering."
-        intro="Keep these answers accurate and practical. They reduce repeated messages and make ordering easier."
+        intro="These answers explain the cart, EFT payment and production process."
         items={orderFaqs}
       />
     </>

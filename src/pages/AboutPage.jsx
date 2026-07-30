@@ -32,8 +32,8 @@ function AboutPage() {
           <div className="about-story__statement">
             <span>Our draft interpretation</span>
             <blockquote>
-              “Restore Diligence” means bringing patience, pride and thoughtful
-              effort back to the food we share.
+              “Restore Diligence” means honouring God through thoughtful work,
+              honest service and food prepared with genuine care.
             </blockquote>
           </div>
 
@@ -41,10 +41,10 @@ function AboutPage() {
             <p className="eyebrow">The story to refine</p>
             <h2>From a trusted kitchen to more tables.</h2>
             <p>
-              Restore Diligence began with a simple belief: familiar food becomes
-              memorable when it is prepared properly. Each order should feel
-              personal, every message should be answered clearly and every tray
-              should be something the cook is proud to send out.
+              Restore Diligence is shaped by a simple Christian principle: whatever
+              work is placed in our hands should be done wholeheartedly. Familiar food
+              becomes memorable when it is prepared properly, communicated honestly
+              and served with gratitude.
             </p>
             <p>
               The business serves everyday cravings as well as family gatherings,
@@ -58,25 +58,25 @@ function AboutPage() {
       <section className="values-section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">How the brand should feel</p>
-            <h2>Warm, reliable and worth recommending.</h2>
+            <p className="eyebrow">Faith expressed through service</p>
+            <h2>Warm, reliable and grounded in good values.</h2>
           </div>
 
           <div className="values-grid">
             <article>
               <FaHeart aria-hidden="true" />
-              <h3>Care in the details</h3>
+              <h3>Diligence in the details</h3>
               <p>Thoughtful preparation, neat presentation and clear communication.</p>
             </article>
             <article>
               <FaStar aria-hidden="true" />
-              <h3>Consistency over hype</h3>
-              <p>A promise to do the basics properly instead of making exaggerated claims.</p>
+              <h3>Honesty over hype</h3>
+              <p>Fair expectations, clear pricing and no exaggerated promises.</p>
             </article>
             <article>
               <FaHandsHelping aria-hidden="true" />
-              <h3>Community minded</h3>
-              <p>Food as a way to gather people and support a wider giving effort.</p>
+              <h3>Service beyond sales</h3>
+              <p>Food as a way to gather people and practical giving as a way to serve.</p>
             </article>
           </div>
         </div>

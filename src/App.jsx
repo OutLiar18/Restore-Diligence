@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Route, Routes } from "react-router";
+import { Route, Routes, useLocation } from "react-router";
 
 import AnnouncementBar from "./components/AnnouncementBar";
 import MobileActionBar from "./components/MobileActionBar";
@@ -19,8 +19,11 @@ const OrderPage = lazy(() => import("./pages/OrderPage"));
 const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
 
 function App() {
+  const location = useLocation();
+  const isGivingDrive = location.pathname.startsWith("/christmas-drive");
+
   return (
-    <div className="site">
+    <div className={`site ${isGivingDrive ? "site--drive" : "site--store"}`}>
       <ScrollToTop />
 
       <a className="skip-link" href="#main-content">

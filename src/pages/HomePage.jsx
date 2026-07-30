@@ -94,31 +94,31 @@ function HomePage() {
             <p className="eyebrow">Simple from craving to collection</p>
             <h2>Ordering should feel easy.</h2>
             <p>
-              The website prepares the details. WhatsApp keeps the conversation
-              personal and makes it simple to confirm availability.
+              Add items to your cart, review the total, confirm availability and
+              pay securely by EFT once the business approves the final order.
             </p>
           </div>
 
           <div className="order-steps__grid">
             <article>
               <span>01</span>
-              <h3>Choose</h3>
-              <p>Browse flavours, quantities and sample prices.</p>
+              <h3>Add to cart</h3>
+              <p>Browse flavours and keep adding items as you shop.</p>
             </article>
             <article>
               <span>02</span>
-              <h3>Send</h3>
-              <p>Use the order builder to prepare a complete WhatsApp request.</p>
+              <h3>Review & confirm</h3>
+              <p>Check quantities, choose a date and send the full order for confirmation.</p>
             </article>
             <article>
               <span>03</span>
-              <h3>Confirm</h3>
-              <p>Agree on the final total, date and collection or delivery details.</p>
+              <h3>Pay by EFT</h3>
+              <p>Transfer only after confirmation. Preparation starts when payment clears.</p>
             </article>
           </div>
 
           <div className="order-steps__actions">
-            <OrderButton label="Build my order" />
+            <OrderButton label="Browse & add to cart" to="/menu" />
             <WhatsAppButton label="Ask a quick question" />
           </div>
         </div>
@@ -131,7 +131,7 @@ function HomePage() {
             <div className="story-preview__shape story-preview__shape--two" />
             <div className="story-preview__quote">
               <span>Restore Diligence means</span>
-              <strong>bringing care and effort back to everyday food.</strong>
+              <strong>serving with gratitude, diligence and care.</strong>
             </div>
           </div>
 
@@ -140,8 +140,8 @@ function HomePage() {
             <h2>More care. More intention. Better sharing.</h2>
             <p>
               The name may be unexpected for a food business, so the brand turns
-              it into a promise: prepare thoughtfully, communicate clearly and do
-              each order properly.
+              it into a promise rooted in faith and service: prepare thoughtfully,
+              communicate clearly and do each order properly.
             </p>
             <Link className="secondary-button" to="/about">
               Read the draft story
@@ -169,9 +169,9 @@ function HomePage() {
             <GiPartyPopper aria-hidden="true" />
             <h2>{siteConfig.christmasDrive.year} Christmas Giving Drive</h2>
             <p>
-              A dedicated space for the community to contribute clean clothing,
-              food-hamper items, hygiene products, blankets, toys and books for
-              people who need extra care during the festive season.
+              A separate green-and-gold giving initiative accepting clean clothing,
+              food-hamper items, hygiene products, blankets, toys and books. No
+              cash or monetary donations are accepted.
             </p>
 
             <div className="drive-preview__actions">
@@ -189,13 +189,13 @@ function HomePage() {
             <p className="eyebrow eyebrow--light">Ready when you are</p>
             <h2>Bring something crisp and memorable to the table.</h2>
             <p>
-              Start with the order builder or message directly for a custom mix,
-              office box or celebration platter.
+              Add favourites to your cart, confirm the final total, then pay by EFT.
+              Orders are processed within 24–48 hours after payment clears.
             </p>
           </div>
 
           <div className="home-final-cta__actions">
-            <OrderButton label="Start an order" />
+            <OrderButton label="Start shopping" to="/menu" />
             <WhatsAppButton label="WhatsApp directly" />
           </div>
         </div>

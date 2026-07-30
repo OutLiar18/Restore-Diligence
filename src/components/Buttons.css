@@ -36,7 +36,7 @@ a.primary-button {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: rgba(67, 20, 7, 0.12);
+  background: rgba(60, 7, 16, 0.12);
   transition: transform 180ms ease;
 }
 
@@ -89,7 +89,7 @@ a.whatsapp-button svg {
 a.secondary-button {
   min-height: 52px;
   padding: 0 22px;
-  border: 1px solid rgba(67, 20, 7, 0.18);
+  border: 1px solid rgba(60, 7, 16, 0.18);
   background: var(--colour-white);
   color: var(--colour-deep);
   box-shadow: var(--shadow-soft);

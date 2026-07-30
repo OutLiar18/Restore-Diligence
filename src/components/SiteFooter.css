@@ -1,5 +1,5 @@
 .site-footer {
-  background: #2b0f08;
+  background: var(--colour-deep);
   color: var(--colour-white);
 }
 
@@ -109,4 +109,27 @@
     grid-template-columns: minmax(280px, 1.35fr) repeat(3, minmax(155px, 0.7fr));
     gap: 48px;
   }
+}
+
+.site-footer__brand small {
+  margin-top: 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--colour-gold);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.site--drive .site-footer {
+  background: var(--colour-drive-deep);
+}
+
+.site--drive .site-footer__brand p,
+.site--drive .site-footer__navigation > strong,
+.site--drive .site-footer__contact > strong,
+.site--drive .site-footer__details > strong {
+  color: var(--colour-gold-light);
 }

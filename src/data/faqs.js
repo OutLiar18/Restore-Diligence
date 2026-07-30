@@ -1,45 +1,55 @@
 export const orderFaqs = [
   {
-    question: "How far ahead should I order?",
+    question: "How does the cart work?",
     answer:
-      "The placeholder recommendation is 24–48 hours. Larger orders and event platters may need more notice.",
+      "Add any menu item to the cart, adjust quantities and continue shopping. Your cart is kept in the browser until you clear it or complete the order.",
   },
   {
-    question: "Do you offer delivery?",
+    question: "When should I make payment?",
     answer:
-      "Delivery or collection can be discussed on WhatsApp. Add the real delivery area and fee before launch.",
+      "Wait for Restore Diligence to confirm availability, the final total and collection or delivery details. Then pay by EFT using the order reference shown at checkout.",
+  },
+  {
+    question: "How long will my order take?",
+    answer:
+      "Orders are processed within 24–48 hours after payment has cleared, depending on order size. Larger platters or event orders may require additional time.",
+  },
+  {
+    question: "Does the website take card payments?",
+    answer:
+      "No. The website displays direct bank-transfer instructions but never asks for card numbers, banking passwords or login details. Complete payment securely through your own bank.",
   },
   {
     question: "Can I request a custom mix?",
     answer:
-      "Yes. Customers can choose flavours and quantities, subject to availability and minimum order sizes.",
-  },
-  {
-    question: "Are vegetarian options available?",
-    answer:
-      "Yes. The sample menu includes potato and pea, and cheese and corn. Confirm ingredients and preparation details before launch.",
+      "Yes. Add the closest items to your cart and explain the custom mix in the notes. The final price will be confirmed before payment.",
   },
 ];
 
 export const driveFaqs = [
   {
-    question: "What can I donate?",
+    question: "Can I donate money?",
     answer:
-      "The draft drive accepts clean wearable clothing, non-perishable groceries, hygiene items, blankets, toys and children’s books. Finalise the list before publishing.",
+      "No. The Christmas Giving Drive does not accept cash, EFT payments or any other monetary donations. It accepts approved useful goods only.",
   },
   {
-    question: "Where will donations go?",
+    question: "What items can I give?",
     answer:
-      "The beneficiary organisation or community has not been confirmed in this draft. Publish the final partner and distribution plan once verified.",
+      "The draft drive accepts clean wearable clothing, sealed non-perishable groceries, unopened hygiene items, blankets, safe toys and children’s books. The final list must be confirmed before launch.",
   },
   {
-    question: "Can someone collect my donation?",
+    question: "Where will the items go?",
     answer:
-      "Collection may be arranged depending on location and availability. The website sends the request to WhatsApp for confirmation.",
+      "The beneficiary organisation or community has not yet been confirmed. The verified partner and distribution plan should be published before collections begin.",
+  },
+  {
+    question: "Can someone collect my items?",
+    answer:
+      "Collection may be arranged depending on location and availability. Use the item-contribution form to ask, or confirm the official drop-off point on WhatsApp.",
   },
   {
     question: "Can businesses contribute in bulk?",
     answer:
-      "Yes. Schools, offices and local businesses can propose a collection box, food-hamper sponsorship or bulk contribution.",
+      "Yes. Schools, offices and local businesses can propose a collection box or contribute approved goods in bulk. Monetary sponsorships are not accepted through this drive.",
   },
 ];

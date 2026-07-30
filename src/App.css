@@ -17,3 +17,19 @@
     padding-bottom: 0;
   }
 }
+
+.site--drive {
+  --colour-ink: #14271d;
+  --colour-deep: #0b3422;
+  --colour-red: #1f6743;
+  --colour-rust: #28784f;
+  --colour-spice: #2f8559;
+  --colour-cream: #f8f3dd;
+  --colour-soft: #edf1df;
+  --colour-muted: #5d6f63;
+  --colour-drive: #1f6743;
+  --colour-drive-deep: #0e3d28;
+  --shadow-soft: 0 14px 40px rgba(14, 61, 40, 0.08);
+  --shadow-medium: 0 22px 55px rgba(14, 61, 40, 0.14);
+  --shadow-large: 0 34px 80px rgba(14, 61, 40, 0.22);
+}

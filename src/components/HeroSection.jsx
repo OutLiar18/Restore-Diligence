@@ -13,7 +13,7 @@ function HeroSection() {
       <div className="home-hero__content">
         <div className="home-hero__trust">
           <span className="home-hero__trust-dot" aria-hidden="true" />
-          Homemade in small batches
+          Faith • Family • Service
         </div>
 
         <h1>
@@ -22,18 +22,18 @@ function HeroSection() {
         </h1>
 
         <p className="home-hero__description">
-          Fresh samoosas and savouries prepared for family tables, office treats,
-          celebrations and those “just one more” moments.
+          Homemade samoosas and savouries prepared with gratitude for family tables,
+          office treats, celebrations and those “just one more” moments.
         </p>
 
         <div className="home-hero__actions">
-          <OrderButton />
+          <OrderButton label="Browse & add to cart" to="/menu" />
           <WhatsAppButton />
         </div>
 
         <p className="home-hero__reassurance">
-          {siteConfig.business.orderLeadTime}. Prices and products are currently
-          placeholder content.
+          {siteConfig.business.orderLeadTime}. Final availability and pricing are
+          confirmed before EFT payment.
         </p>
       </div>
 

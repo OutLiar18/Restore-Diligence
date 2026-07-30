@@ -1,7 +1,12 @@
-import { Link } from "react-router";
+import { FaCheck, FaPlus, FaShoppingBasket } from "react-icons/fa";
+
+import { useCart } from "../context/CartContext";
 import "./ProductCard.css";
 
 function ProductCard({ item }) {
+  const { addItem, items } = useCart();
+  const quantityInCart = items.find((cartItem) => cartItem.id === item.id)?.quantity ?? 0;
+
   return (
     <article className="product-card">
       <div className="product-card__image">
@@ -28,9 +33,16 @@ function ProductCard({ item }) {
             <span>{item.unit}</span>
           </div>
 
-          <Link to={`/order?item=${item.id}`} aria-label={`Order ${item.name}`}>
-            Order <span aria-hidden="true">→</span>
-          </Link>
+          <button
+            type="button"
+            className={quantityInCart ? "product-card__add product-card__add--active" : "product-card__add"}
+            onClick={() => addItem(item.id)}
+            aria-label={`Add ${item.name} to cart`}
+          >
+            {quantityInCart ? <FaCheck aria-hidden="true" /> : <FaShoppingBasket aria-hidden="true" />}
+            <span>{quantityInCart ? `${quantityInCart} in cart` : "Add"}</span>
+            <FaPlus aria-hidden="true" />
+          </button>
         </div>
       </div>
     </article>

@@ -1,9 +1,8 @@
 /*
   DUMMY CONTENT NOTICE
   --------------------
-  Replace the contact details, service area, business hours, social links and
-  Netlify URL before the public launch. Keeping these values in one file makes
-  the rest of the website easy to update.
+  Replace every value marked TO BE CONFIRMED before the public launch.
+  Keeping these values in one file makes the website easy to update.
 */
 
 export const siteConfig = {
@@ -13,7 +12,8 @@ export const siteConfig = {
 
   companyName: "Restore Diligence",
   descriptor: "Homemade Samoosas & Savouries",
-  tagline: "Care in every fold. Flavour in every bite.",
+  tagline: "Prepared with gratitude. Served with care.",
+  faithLine: "Faith • Family • Service",
 
   seo: {
     defaultTitle: "Restore Diligence | Homemade Samoosas & Savouries",
@@ -36,13 +36,28 @@ export const siteConfig = {
 
   business: {
     serviceArea: "Benoni and surrounding areas",
-    orderLeadTime: "Please order at least 24–48 hours ahead",
-    collectionNote: "Collection details are confirmed on WhatsApp",
+    orderLeadTime:
+      "Orders are processed within 24–48 hours after payment has cleared, depending on order size",
+    collectionNote: "Collection or delivery details are confirmed before payment",
     hours: [
       { days: "Monday–Friday", time: "08:00–17:30" },
       { days: "Saturday", time: "08:00–14:00" },
       { days: "Sunday", time: "Pre-orders only" },
     ],
+  },
+
+  payments: {
+    method: "EFT / direct bank transfer",
+    bankName: "TO BE CONFIRMED",
+    accountHolder: "Restore Diligence",
+    accountNumber: "TO BE CONFIRMED",
+    accountType: "TO BE CONFIRMED",
+    branchCode: "TO BE CONFIRMED",
+    referencePrefix: "RD",
+    instructions:
+      "Please wait for final availability and pricing confirmation before making payment. Use your order reference as the payment reference and send proof of payment on WhatsApp.",
+    processingNotice:
+      "Production starts after payment has cleared. Orders are processed within 24–48 hours, depending on order size.",
   },
 
   social: {
@@ -57,6 +72,8 @@ export const siteConfig = {
     collectionDeadline: "Date to be confirmed",
     distributionDate: "Date to be confirmed",
     dropOffLocation: "Location to be confirmed on WhatsApp",
+    moneyPolicy:
+      "This drive accepts useful goods only. No cash, EFT or other monetary donations are accepted.",
   },
 };
 

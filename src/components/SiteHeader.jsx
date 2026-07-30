@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router";
+import { FaShoppingBasket } from "react-icons/fa";
+import { NavLink, useLocation } from "react-router";
 
 import { siteConfig } from "../config/site";
+import { useCart } from "../context/CartContext";
 import BrandMark from "./BrandMark";
 import OrderButton from "./OrderButton";
 import "./SiteHeader.css";
@@ -9,7 +11,6 @@ import "./SiteHeader.css";
 const navigationLinks = [
   { label: "Home", to: "/" },
   { label: "Menu", to: "/menu" },
-  { label: "Order", to: "/order" },
   { label: "About", to: "/about" },
   { label: "Giving Drive", to: "/christmas-drive", accent: true },
   { label: "Contact", to: "/contact" },
@@ -20,6 +21,9 @@ function SiteHeader() {
   const menuButtonRef = useRef(null);
   const navigationRef = useRef(null);
   const { contacts } = siteConfig;
+  const { totalItems } = useCart();
+  const location = useLocation();
+  const isGivingDrive = location.pathname.startsWith("/christmas-drive");
 
   const closeMenu = useCallback(({ restoreFocus = false } = {}) => {
     setMenuOpen(false);
@@ -91,7 +95,7 @@ function SiteHeader() {
           <BrandMark compact />
           <span>
             <strong>{siteConfig.companyName}</strong>
-            <small>{siteConfig.descriptor}</small>
+            <small>{isGivingDrive ? siteConfig.christmasDrive.title : siteConfig.faithLine}</small>
           </span>
         </NavLink>
 
@@ -148,7 +152,20 @@ function SiteHeader() {
             </a>
           </div>
 
-          <OrderButton compact className="main-navigation__order" onClick={() => closeMenu()} />
+          <OrderButton
+            compact
+            label={
+              isGivingDrive
+                ? "Shop Samoosas"
+                : totalItems
+                  ? `Cart (${totalItems})`
+                  : "View Cart"
+            }
+            to={isGivingDrive ? "/menu" : "/order"}
+            icon={<FaShoppingBasket aria-hidden="true" />}
+            className="main-navigation__order"
+            onClick={() => closeMenu()}
+          />
         </nav>
       </div>
     </header>

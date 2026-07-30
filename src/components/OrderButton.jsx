@@ -1,7 +1,14 @@
 import { Link } from "react-router";
 import "./Buttons.css";
 
-function OrderButton({ label = "Start an Order", compact = false, className = "", onClick }) {
+function OrderButton({
+  label = "View Cart",
+  compact = false,
+  className = "",
+  onClick,
+  icon = null,
+  to = "/order",
+}) {
   const classes = [
     "primary-button",
     compact ? "primary-button--compact" : "",
@@ -11,7 +18,8 @@ function OrderButton({ label = "Start an Order", compact = false, className = ""
     .join(" ");
 
   return (
-    <Link className={classes} to="/order" onClick={onClick}>
+    <Link className={classes} to={to} onClick={onClick}>
+      {icon}
       <span>{label}</span>
       <span className="primary-button__arrow" aria-hidden="true">
         →

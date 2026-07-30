@@ -1,0 +1,236 @@
+.home-hero {
+  position: relative;
+  width: min(var(--content-width), calc(100% - 28px));
+  margin-inline: auto;
+  padding: 54px 0 82px;
+  display: grid;
+  gap: 42px;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 20px;
+  left: -130px;
+  border-radius: 50%;
+  background: rgba(245, 165, 36, 0.12);
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.home-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.home-hero__trust {
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--colour-rust);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.home-hero__trust-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--colour-gold);
+  box-shadow: 0 0 0 6px rgba(245, 165, 36, 0.16);
+}
+
+.home-hero h1 {
+  margin: 0;
+  max-width: 850px;
+  color: var(--colour-deep);
+  font-size: clamp(2.75rem, 13vw, 6.8rem);
+  line-height: 0.93;
+  letter-spacing: -0.065em;
+}
+
+.home-hero h1 span {
+  color: var(--colour-spice);
+}
+
+.home-hero__description {
+  max-width: 640px;
+  margin: 25px 0 0;
+  color: var(--colour-muted);
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  line-height: 1.75;
+}
+
+.home-hero__actions {
+  margin-top: 31px;
+  display: grid;
+  gap: 12px;
+}
+
+.home-hero__reassurance {
+  margin: 17px 0 0;
+  color: var(--colour-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.home-hero__visual {
+  position: relative;
+  min-height: 490px;
+  padding-bottom: 88px;
+}
+
+.home-hero__image {
+  position: absolute;
+  inset: 0 0 88px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--colour-deep);
+  box-shadow: var(--shadow-large);
+}
+
+.home-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-hero__image-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(43, 15, 8, 0.62), transparent 52%),
+    linear-gradient(to right, rgba(143, 45, 22, 0.18), transparent 60%);
+}
+
+.home-hero__feature-card {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  left: 12px;
+  z-index: 3;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+  background: rgba(67, 20, 7, 0.95);
+  color: var(--colour-white);
+  box-shadow: 0 22px 50px rgba(43, 15, 8, 0.32);
+  backdrop-filter: blur(14px);
+}
+
+.home-hero__feature-card > span {
+  color: var(--colour-gold);
+  font-size: 0.67rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.home-hero__feature-card strong {
+  margin-top: 5px;
+  display: block;
+  line-height: 1.4;
+}
+
+.home-hero__feature-card a {
+  margin-top: 10px;
+  display: inline-flex;
+  gap: 8px;
+  color: #ffe5b5;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.home-hero__service-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
+  padding: 10px 13px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--colour-deep);
+  font-size: 0.7rem;
+  font-weight: 900;
+  box-shadow: var(--shadow-soft);
+}
+
+.home-hero__service-tag span {
+  color: var(--colour-spice);
+}
+
+@media (min-width: 520px) {
+  .home-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .home-hero__visual {
+    min-height: 570px;
+  }
+
+  .home-hero__feature-card {
+    right: 24px;
+    left: 24px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-hero {
+    width: min(var(--content-width), calc(100% - 56px));
+    padding-top: 74px;
+    padding-bottom: 102px;
+  }
+
+  .home-hero__visual {
+    min-height: 640px;
+    padding-bottom: 68px;
+  }
+
+  .home-hero__image {
+    inset: 0 0 68px;
+  }
+
+  .home-hero__feature-card {
+    right: 28px;
+    left: auto;
+    width: min(430px, calc(100% - 56px));
+  }
+}
+
+@media (min-width: 980px) {
+  .home-hero {
+    min-height: calc(100vh - 132px);
+    padding-top: 78px;
+    padding-bottom: 104px;
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 0.8fr);
+    align-items: center;
+    gap: 60px;
+  }
+
+  .home-hero__visual {
+    min-height: 670px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-hero {
+    gap: 84px;
+  }
+
+  .home-hero__visual {
+    min-height: 720px;
+  }
+}

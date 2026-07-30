@@ -1,0 +1,19 @@
+.site {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  overflow-x: clip;
+  background: var(--colour-white);
+}
+
+.site main {
+  width: 100%;
+  min-width: 0;
+  overflow: clip;
+}
+
+@media (min-width: 760px) {
+  .site {
+    padding-bottom: 0;
+  }
+}

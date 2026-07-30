@@ -1,0 +1,124 @@
+.product-card {
+  min-width: 0;
+  border: 1px solid rgba(67, 20, 7, 0.09);
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--colour-white);
+  box-shadow: var(--shadow-soft);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.product-card__image {
+  position: relative;
+  aspect-ratio: 1.28 / 1;
+  overflow: hidden;
+  background: var(--colour-soft);
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 420ms ease;
+}
+
+.product-card:hover .product-card__image img {
+  transform: scale(1.035);
+}
+
+.product-card__popular,
+.product-card__heat {
+  position: absolute;
+  top: 14px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 0.67rem;
+  font-weight: 900;
+  backdrop-filter: blur(10px);
+}
+
+.product-card__popular {
+  left: 14px;
+  background: var(--colour-gold);
+  color: var(--colour-deep);
+}
+
+.product-card__heat {
+  right: 14px;
+  background: rgba(43, 15, 8, 0.84);
+  color: var(--colour-white);
+}
+
+.product-card__content {
+  padding: 21px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.product-card__category {
+  color: var(--colour-spice);
+  font-size: 0.69rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.product-card h3 {
+  margin: 8px 0 0;
+  color: var(--colour-deep);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.product-card p {
+  margin: 11px 0 0;
+  color: var(--colour-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.product-card__bottom {
+  margin-top: auto;
+  padding-top: 22px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.product-card__bottom > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__bottom strong {
+  color: var(--colour-deep);
+  font-size: 1.18rem;
+}
+
+.product-card__bottom > div span {
+  color: var(--colour-muted);
+  font-size: 0.72rem;
+}
+
+.product-card__bottom a {
+  min-height: 40px;
+  padding: 0 13px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--colour-cream);
+  color: var(--colour-rust);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-decoration: none;
+}

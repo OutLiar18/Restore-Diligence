@@ -1,0 +1,103 @@
+a.primary-button,
+a.whatsapp-button,
+a.secondary-button {
+  width: max-content;
+  max-width: 100%;
+  min-height: 54px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+a.primary-button {
+  padding: 0 10px 0 22px;
+  border: 1px solid var(--colour-gold);
+  gap: 14px;
+  background: var(--colour-gold);
+  color: var(--colour-deep);
+  box-shadow:
+    0 0 0 4px rgba(245, 165, 36, 0.12),
+    0 15px 34px rgba(217, 93, 31, 0.23);
+}
+
+.primary-button__arrow {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(67, 20, 7, 0.12);
+  transition: transform 180ms ease;
+}
+
+a.primary-button:hover,
+a.whatsapp-button:hover,
+a.secondary-button:hover {
+  transform: translateY(-2px);
+}
+
+a.primary-button:hover .primary-button__arrow {
+  transform: translateX(3px);
+}
+
+a.primary-button--compact,
+a.whatsapp-button--compact {
+  min-height: 44px;
+  font-size: 0.84rem;
+}
+
+a.primary-button--compact {
+  padding-left: 17px;
+  gap: 10px;
+}
+
+a.primary-button--compact .primary-button__arrow {
+  width: 27px;
+  height: 27px;
+  flex-basis: 27px;
+}
+
+a.whatsapp-button {
+  padding: 0 23px;
+  border: 1px solid var(--colour-whatsapp);
+  gap: 10px;
+  background: var(--colour-whatsapp);
+  color: #0c3019;
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.2);
+}
+
+a.whatsapp-button svg {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  padding: 3px;
+  border-radius: 50%;
+  background: #0c3019;
+  color: var(--colour-white);
+}
+
+a.secondary-button {
+  min-height: 52px;
+  padding: 0 22px;
+  border: 1px solid rgba(67, 20, 7, 0.18);
+  background: var(--colour-white);
+  color: var(--colour-deep);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 519px) {
+  a.primary-button:not(.primary-button--compact),
+  a.whatsapp-button:not(.whatsapp-button--compact) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,131 @@
+.smart-form {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid rgba(67, 20, 7, 0.1);
+  border-radius: 24px;
+  background: var(--colour-white);
+  box-shadow: var(--shadow-medium);
+}
+
+.smart-form__intro {
+  max-width: 680px;
+}
+
+.smart-form__intro > span {
+  color: var(--colour-spice);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.smart-form__intro h2 {
+  margin: 9px 0 0;
+  color: var(--colour-deep);
+  font-size: clamp(1.9rem, 7vw, 3rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.smart-form__intro p {
+  margin: 16px 0 0;
+  color: var(--colour-muted);
+  line-height: 1.7;
+}
+
+.smart-form__grid {
+  margin-top: 28px;
+  display: grid;
+  gap: 16px;
+}
+
+.smart-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--colour-deep);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.smart-form input,
+.smart-form select,
+.smart-form textarea {
+  width: 100%;
+  border: 1px solid rgba(67, 20, 7, 0.16);
+  border-radius: 11px;
+  background: #fffdf9;
+  color: var(--colour-ink);
+}
+
+.smart-form input,
+.smart-form select {
+  min-height: 50px;
+  padding: 0 14px;
+}
+
+.smart-form textarea {
+  padding: 13px 14px;
+}
+
+.smart-form input:focus,
+.smart-form select:focus,
+.smart-form textarea:focus {
+  border-color: var(--colour-spice);
+}
+
+.smart-form__submit {
+  width: 100%;
+  min-height: 55px;
+  margin-top: 22px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--colour-whatsapp);
+  color: #0c3019;
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.2);
+}
+
+.smart-form__submit:hover {
+  transform: translateY(-2px);
+}
+
+.smart-form__submit svg {
+  width: 24px;
+  height: 24px;
+}
+
+.smart-form__disclaimer {
+  margin: 13px 0 0;
+  color: var(--colour-muted);
+  font-size: 0.75rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.smart-form--drive .smart-form__intro > span {
+  color: var(--colour-drive);
+}
+
+@media (min-width: 680px) {
+  .smart-form {
+    padding: 34px;
+  }
+
+  .smart-form__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .smart-form__full {
+    grid-column: 1 / -1;
+  }
+
+  .smart-form__submit {
+    width: auto;
+    padding-inline: 26px;
+  }
+}

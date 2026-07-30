@@ -1,0 +1,54 @@
+.brand-mark {
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  background: var(--colour-deep);
+  box-shadow: 0 10px 24px rgba(67, 20, 7, 0.18);
+}
+
+.brand-mark__triangle {
+  position: relative;
+  width: 37px;
+  height: 34px;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+}
+
+.brand-mark__triangle::before {
+  content: "";
+  position: absolute;
+  inset: 1px 0 0;
+  background: var(--colour-gold);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.brand-mark__triangle span {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 4px;
+  color: var(--colour-deep);
+  font-size: 0.55rem;
+  font-weight: 950;
+  letter-spacing: -0.03em;
+}
+
+.brand-mark--compact {
+  width: 46px;
+  height: 46px;
+  flex-basis: 46px;
+  border-radius: 14px;
+}
+
+.brand-mark--compact .brand-mark__triangle {
+  width: 31px;
+  height: 29px;
+}
+
+.brand-mark--light {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
